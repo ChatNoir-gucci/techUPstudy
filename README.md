@@ -1,1 +1,1 @@
-# techUPstudy
+# 山口智也
