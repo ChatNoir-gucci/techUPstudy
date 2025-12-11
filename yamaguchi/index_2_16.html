@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>C-6 課題</title>
+  <style>
+  .A {
+      position:  relative;
+      background-color:  #ffdddd;
+      width: 500px;
+      height: 200px;
+  }
+ 
+  .B {
+      z-index: 20;
+      position:  absolute;
+      background-color:  #ff00ff;
+      color:  #fff;
+      padding: 20px; 
+      width: 200px;
+      height: 46px;
+      text-align:  center;
+      font-size: 30px;
+      top:  0;
+      bottom:  0;
+      left:  0;
+      right:  0;
+      margin:  auto;
+  }
+  
+   .C {
+      z-index: 10;
+      position:  absolute;
+      background-color:  #00ffff;
+      color:  #fff;
+      padding: 40px;
+      width:  240px;
+      height: 46px;
+      text-align:  center;
+      font-size: 30px;
+      top:  0;
+      bottom:  0;
+      left: 0;
+      right:  0;
+      margin:  auto;
+    }
+  
+  </style>
+</head>
+
+<body>
+    <div class="A">背景表示
+        <div class="B">ロゴ表示</div>
+        <p class="C">背景</p>
+    </div>
+</body>
+</html>
