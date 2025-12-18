@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>C-9 課題</title>
+    <style>
+    .body {
+        min-width: 380px;
+        margin: 0;
+        font-family: sans-serif;
+    }    
+
+    header{
+      background: #ff838b;
+      width: 100%;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .layout {
+        display: flex;
+        height: 400px;
+    }
+    
+    .left-bar { 
+        background-color: lightgreen;
+        width: 16px;
+        height: 100%;
+    }
+    .contentA {
+        height: 100%;
+        background-color: white;
+        flex: 1;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    .right-bar {
+        background-color: lightgreen;
+        width: 16px; 
+        height: 100%;
+    }
+
+    footer {
+        background-color: yellow;
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    </style>
+</head>
+
+<body>
+    <header>header</header>
+    <div class="layout">
+        <div class="left-bar"></div>
+        <div class="contentA">contentA</div>
+        <div class="right-bar"></div>
+    </div>
+    <footer>footer</footer>
+</body>
+</html>
