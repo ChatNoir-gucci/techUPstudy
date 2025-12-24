@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C-13 課題</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+    .item-box {
+        display: grid;
+    }
+    .box1,.box5 {
+        grid-template-columns: 1fr;
+    }
+
+    .box2,.box4 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .box3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .item1 {background-color: #0000ff; }
+    .item2 {background-color: #00ff00; }
+    .item3 {background-color: #ff0000; }
+
+    .item4 {background-color: #00ffff; }
+    .item5 {background-color: #ffffff; }
+    .item6 {background-color: #ffff00; }
+
+    .item7 {background-color: #800080; }
+    .item8 {background-color: #ff00ff; }
+
+    .item9 {background-color: #8b4513; }
+    </style>
+</head>
+
+<body>
+    <div class="item-box box1">
+        <div class="item1">header</div>
+    </div>
+
+    <div class="item-box box2">
+        <div class="item2">content-1</div>
+        <div class="item3">content-2</div>
+    </div>
+
+    <div class="item-box box3">
+        <div class="item4">content-3-1</div>
+        <div class="item5">content-3-2</div>
+        <div class="item6">content-3-3</div>
+    </div>
+
+    <div class="item-box box4">
+        <div class="item7">content-4-1</div>
+        <div class="item8">content-4-2</div>
+    </div>
+
+    <div class="item-box box5">
+        <div class="item9">footer</div>
+    </div>
+</body>
+</html>
