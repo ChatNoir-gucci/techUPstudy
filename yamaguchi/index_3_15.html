@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+  <title>J-12 課題</title>
+</head>
+<body>
+  <p>J-12 課題</p>
+  <script>
+    //　課題①
+    function Who(name) {
+      this.name = name;
+    }
+
+    //　課題②
+    Who.prototype.getName = function() {
+      return this.name;
+    };
+
+    const person = new Who("tanaka");
+
+    console.log(person.getName());
+  </script>
+</body>
+</html>
