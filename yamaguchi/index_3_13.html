@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+  <title>J-10 課題</title>
+</head>
+<body>
+  <p>J-10 課題</p>
+  <script>
+    function dice(min, max){
+      return Math.floor(Math.random() * (max + 1 - min)) + min;
+    }
+    
+    console.log(dice(1, 6));
+
+    
+    function dice(min, max){
+      return Math.floor(Math.random() * (max + 1 - min)) + min;
+    }
+
+    const results = [];
+    for (let i = 0; i < 10; i++){
+        const value = dice(1, 6);
+        results.push(value);
+        console.log(value);
+    }
+    console.log("結果:", results);
+  </script>
+</body>
+</html>
