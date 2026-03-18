@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+  <title>J-14 課題</title>
+</head>
+
+<body>
+  <p>J-14 課題</p>
+  <h1>Todoリスト</h1>
+
+  <label for="input-todo-box">Todoタスクの入力：</label>
+  <input id="input-todo-box" type="text">
+  <button id="add-button">追加</button>
+  
+  <h2>現在のTodoリスト</h2>
+  <ul id="todo-list"></ul>
+
+
+  <script>
+    function todo() {
+      const todos = [];
+
+      const input = document.getElementById("input-todo-box");
+      const addButton = document.getElementById("add-button");
+      const list = document.getElementById("todo-list");
+
+      addButton.addEventListener("click" , () => {
+        const text = input.value;
+        if (text === "")return;
+
+        todos.push(text);
+        input.value = "";
+        showTodos();
+      });
+
+      function showTodos() {
+        list.innerHTML = "";
+        
+        todos.forEach((todo, index) => {
+          const li = document.createElement("li");
+          li.textContent = todo;
+
+          const deleteButton = document.createElement("button");
+          deleteButton.textContent = "削除";
+          deleteButton.addEventListener("click", () => {
+            deleteTodo(index);
+          });
+
+          li.appendChild(deleteButton);
+          list.appendChild(li);
+        });
+      }
+
+      function deleteTodo(index) {
+        todos.splice(index, 1);
+        showTodos();
+      }
+    }
+
+    todo();
+  </script>
+</body>
+</html>
