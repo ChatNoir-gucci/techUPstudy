@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+  <title>J-15 課題</title>
+</head>
+<body>
+  <p>J-15 課題</p>
+  <h3>初期値</h3>
+
+  <form id="myform">
+    <input id="counter" type="text" value="0">
+    <button type="submit">ボタン</button>
+  </form>
+
+  <script>
+    const form = document.getElementById("myform");
+    const input = document.getElementById("counter");
+
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+        let value = Number(input.value);
+        value = value + 1;
+        input.value = value;
+    });
+
+  </script>
+</body>
+</html>

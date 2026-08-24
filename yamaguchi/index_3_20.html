@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>J-17 課題</title>
+</head>
+<body>
+  <p>J-17 課題</p>
+
+  <canvas id="myCanvas" width="400" height="400"></canvas>
+
+  <script>
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+
+    const x = 200;
+    const y = 150;
+
+    const r = 120;
+
+    const start = 0 * Math.PI / 180;
+    const end   = 270 * Math.PI / 180;
+
+    ctx.beginPath();
+    ctx.arc(x, y, r, start, end);
+    ctx.stroke();
+  </script>
+</body>
+</html>

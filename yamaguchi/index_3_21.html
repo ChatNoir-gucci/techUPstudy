@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>J-18 課題</title>
+
+</head>
+<body>
+  <p>J-18 課題</p>
+<canvas id="myCanvas"></canvas>
+
+<script>
+  const canvas = document.getElementById("myCanvas");
+  const ctx = canvas.getContext("2d");
+
+  const image = new Image();
+  image.src = "https://techup.tokyo/wp-content/uploads/2022/05/gosticon.png";
+
+  image.onload = function() {
+    const width = 400;
+    const height = 400;
+    canvas.width = width;
+    canvas.height = height;
+
+    const centerX = width / 2;
+    const centerY = height / 2;
+
+    const radius = 120;
+
+    let angle = 0;
+
+    function animate() {
+      ctx.clearRect(0, 0, width, height);
+
+      const x = centerX + Math.cos(angle) * radius;
+      const y = centerY + Math.sin(angle) * radius;
+
+      ctx.drawImage(image, x - 25, y - 25, 50, 50);
+
+      angle += 0.02;
+
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+  };
+</script>
+
+</body>
+</html>
