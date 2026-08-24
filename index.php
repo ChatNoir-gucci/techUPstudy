@@ -31,5 +31,4 @@ $diffDays = $diffSeconds / (60 * 60 * 24);
 printf("今日から3か月後の日付は、%sです。\n", $threeMonthsLater);
 echo "<br>";
 printf("これは今日から%d日後の日付です。\n", $diffDays);
-
 ?>
