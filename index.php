@@ -7,13 +7,13 @@ echo "<br><br>";
 
 //課題2
 $today = date("Y-m-d");
-$yserday = date("Y-m-d", strtotime("-1 day"));
+$yesterday = date("Y-m-d", strtotime("-1 day"));
 $tomorrow = date("Y-m-d", strtotime("+1 day"));
 $nextWeek = date("Y-m-d", strtotime("+1 week"));
 
 printf("今日は%sです。\n", $today);
 echo "<br>";
-printf("昨日は%sです。\n", $yserday);
+printf("昨日は%sです。\n", $yesterday);
 echo "<br>";
 printf("明日は%sです。\n", $tomorrow);
 echo "<br>";
@@ -31,5 +31,4 @@ $diffDays = $diffSeconds / (60 * 60 * 24);
 printf("今日から3か月後の日付は、%sです。\n", $threeMonthsLater);
 echo "<br>";
 printf("これは今日から%d日後の日付です。\n", $diffDays);
-
 ?>
